@@ -8,8 +8,13 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+body {
+  margin: 0px;
+}
 .body-grid {
   height: 100vh;
+  height: 100vh;
+  /* max-width: 650px; */
   margin: 0;
   display: grid;
   grid-template-rows: [header] 15% [main] 1fr [footer] 60px;
@@ -17,7 +22,7 @@ html {
 
 header {
   grid-row: 1 / 2;
-  background-color: rgb(20, 29, 20);
+  background-color: var(--background-dark);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -25,20 +30,21 @@ header {
 
 main {
   grid-row: 2/3;
-  background-color: rgb(50, 51, 40);
+  background-color: var(--background-lighter);
   display: flex;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
   overflow-y: scroll;
-  width: 100vw;
+  scroll-padding: 50px 0 50px 0;
 }
 
 footer {
   grid-row: 3/4;
-  background-color: rgb(20, 29, 20);
+  background-color: var(--background-dark);
   display: flex;
   justify-content: center;
+  scroll-margin-top: 100px;
 }
 .header-buttons {
   display: flex;
@@ -57,5 +63,22 @@ svg {
 }
 
 .background-image {
-  width: 50%;
+  width: 240px;
+}
+@media (min-width: 650px) {
+  .body-grid {
+    grid-template-columns: 1fr 650px 1fr;
+    background-image: url(../images/galaxy.jpg);
+  }
+  main {
+    grid-column: 2 / 3;
+  }
+
+  header {
+    grid-column: 2 / 3;
+  }
+
+  footer {
+    grid-column: 2 / 3;
+  }
 }

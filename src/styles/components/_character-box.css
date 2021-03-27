@@ -3,23 +3,22 @@
   height: min-content;
   padding: 15px;
   display: grid;
-  grid-template-columns: 120px 160px;
+  grid-template-columns: 110px 160px;
 
-  background-color: rgb(20, 29, 20);
-  /* box-shadow: 1px 0px 9px 5px rgba(134, 245, 6, 0.678); */
+  background-color: var(--background-dark);
 }
 .character-box__alive {
-  box-shadow: 1px 0px 9px 5px rgba(134, 245, 6, 0.678);
-  color: rgba(134, 245, 6, 0.678);
+  box-shadow: 1px 0px 9px 5px var(--toxic-green);
+  color: var(--toxic-green);
 }
 
 .character-box__unknown {
-  box-shadow: 1px 0px 9px 5px rgba(238, 217, 25, 0.678);
-  color: rgba(238, 217, 25, 0.678);
+  box-shadow: 1px 0px 9px 5px var(--juicy-yellow);
+  color: var(--juicy-yellow);
 }
 .character-box__dead {
-  box-shadow: 1px 0px 9px 5px rgba(236, 17, 138, 0.678);
-  color: rgba(236, 17, 138, 0.678);
+  box-shadow: 1px 0px 9px 5px var(--dangerous-red);
+  color: var(--dangerous-red);
 }
 
 .character-box__image {

@@ -1,3 +1,11 @@
 :root {
+  --background-dark: rgb(20, 29, 20);
+  --background-lighter: rgb(50, 51, 40);
+  --toxic-green: rgba(134, 245, 6, 0.678);
+  --dangerous-red: #d41a87;
+  --gradient-red: #f5bae9;
+  --juicy-yellow: #f2f545;
+  --shiny-blue: #caedec;
+  --shadow-blue: #6dd8f2;
   /* Define your variable colors here */
 }

@@ -11,8 +11,6 @@ form.addEventListener("submit", (event) => {
   const status = statusDropdown.value;
   clearCharacters();
   fetchCharacters(status).then((characters) => {
-    //console.log(characters);
-
     characters.results.forEach((character) => {
       combineCharacter(character);
     });

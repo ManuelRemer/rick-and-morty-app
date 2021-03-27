@@ -12,12 +12,12 @@ input {
   box-sizing: border-box;
   margin: 0;
   border: 1px #aaa;
-  box-shadow: 1px 0px 9px 5px rgba(100, 193, 255, 0.76);
+  box-shadow: 1px 0px 9px 3px var(--shadow-blue);
   border-radius: 0.2em;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #a3ebf5;
+  background-color: var(--shiny-blue);
 
   /* background: linear-gradient(to bottom, #f5bae9 0%, #d41a87 100%); */
 }
