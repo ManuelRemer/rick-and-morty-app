@@ -27,8 +27,11 @@ main {
   grid-row: 2/3;
   background-color: rgb(50, 51, 40);
   display: flex;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: scroll;
+  width: 100vw;
 }
 
 footer {
@@ -36,7 +39,6 @@ footer {
   background-color: rgb(20, 29, 20);
   display: flex;
   justify-content: center;
-  /* background-image: url(../images/Rick_Morty.png); */
 }
 .header-buttons {
   display: flex;

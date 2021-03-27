@@ -11,9 +11,9 @@ export function combineCharacter(character) {
 function createCharacterSection(character) {
   const characterSection = document.createElement("section");
   characterSection.classList.add("character-box");
-  if (character.status === "alive") {
+  if (character.status === "Alive") {
     characterSection.classList.add("character-box__alive");
-  } else if (character.status === "dead") {
+  } else if (character.status === "Dead") {
     characterSection.classList.add("character-box__dead");
   } else if (character.status === "unknown") {
     characterSection.classList.add("character-box__unknown");
