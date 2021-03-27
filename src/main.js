@@ -1,7 +1,6 @@
 import { fetchCharacters } from "./lib/api.js";
 import { combineCharacter } from "./lib/characters.js";
 
-//const loadDataButton = document.querySelector(".header-button");
 const statusDropdown = document.querySelector(".select-css");
 
 const form = document.querySelector("form");
