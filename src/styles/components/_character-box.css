@@ -1,0 +1,21 @@
+.character-box {
+  width: 280px;
+  height: min-content;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 17px;
+  padding-top: 20px;
+  background-color: rgb(20, 29, 20);
+  /* box-shadow: 1px 0px 9px 5px rgba(134, 245, 6, 0.678); */
+}
+
+.character-box__alive {
+  box-shadow: 1px 0px 9px 5px rgba(134, 245, 6, 0.678);
+}
+
+.character-box__image {
+  width: 100px;
+}

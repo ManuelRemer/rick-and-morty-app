@@ -8,3 +8,52 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+.body-grid {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: [header] 15% [main] 1fr [footer] 60px;
+}
+
+header {
+  grid-row: 1 / 2;
+  background-color: rgb(20, 29, 20);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main {
+  grid-row: 2/3;
+  background-color: rgb(50, 51, 40);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  grid-row: 3/4;
+  background-color: rgb(20, 29, 20);
+  display: flex;
+  justify-content: center;
+  /* background-image: url(../images/Rick_Morty.png); */
+}
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.header-form {
+  display: block;
+
+  width: 60%;
+}
+
+svg {
+  height: 80%;
+}
+
+.background-image {
+  width: 50%;
+}
